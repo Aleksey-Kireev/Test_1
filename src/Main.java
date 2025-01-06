@@ -21,10 +21,29 @@ public class Main {
         int summ = 0;
         for ( int i=0; i<=sc; i++) {
             summ = summ + i;
-
-
         }
         System.out.println("Сумма всех чисел от 1 до " + sc + " = " + summ);
+
+        System.out.println ("Теперь через WHILE ");
+        System.out.println(" ");
+        System.out.println("Введите любое целое число: ");
+        sc = scan.nextInt();
+        System.out.print ("Все числа - ");
+        for (int i=1; i <= sc; i++) {
+            System.out.print (i + " ");
+        }
+        System.out.println (" ");
+
+        summ = 0;
+        int i=1;
+        while (i<=sc) {
+            summ = summ + i;
+            i++;
+        }
+        System.out.println("Сумма всех чисел от 1 до " + sc + " = " + summ);
+
+
+
 
 
 //  Работа с If и switch
