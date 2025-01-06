@@ -21,6 +21,38 @@ public class Main {
             i++;
         }
 
+//  ----- Найти простое число   -------
+
+        i=1;
+        while (i<=10) {
+            System.out.println (" ");
+            System.out.print ("Введите число от 0 до 100 : ");
+            Scanner inNum = new Scanner (System.in);
+            n = inNum.nextInt ();
+
+            System.out.println (" ");
+            for (int k = 2; k <= Math.sqrt(n); k++) {
+                System.out.print(" " + k);
+                if (n % k == 0) {
+                    System.out.println(" if " + k);
+                    System.out.println(n + " - не является простым числом.");
+                    break;
+                } else {
+                    System.out.println(" else ");
+                    System.out.println(n + " - является простым числомю");
+                }
+            }
+
+        i++;
+
+        }
+
+
+
+
+
+
+
         /*
         else if (i==3) {
             System.out.println ("Вы ввели число 3");
